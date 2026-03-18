@@ -1,1 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    color: #000;
+    padding: 20px 12px;
+    line-height: 1.4;
+}
+
+header{
+    margin-bottom: 28px;
+}
+
+nav ul{
+    list-style: none;
+    margin-left: 68px;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 18px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+main, footer{
+    max-width: 1250px;
+}
+
+main section h2{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+section {
+    margin-bottom: 22px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    line-height: 1;
+}
+
+span {
+    font-family: 'Coiny', cursive;
+    font-size: 62px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    max-width: 1180px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+ol {
+    padding-left: 34px;
+}
+
+ol li {
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 18px;
+}
+
+footer h3 {
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin-left: 80px;
+}
