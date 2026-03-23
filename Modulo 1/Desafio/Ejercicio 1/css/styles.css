@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@100..900&family=MuseoModerno&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#EDF7FF;
+    border-top: 4px solid #8a9af1;
+    padding: 100px 35px 0 100px;
+}
+
+h1{
+    font-family: 'MuseoModerno', sans-serif;
+    color: #0a2ff1;
+    font-size: 117.3px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+h2{
+    font-family: 'MuseoModerno', sans-serif;
+    color: #0a2ff1;
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 95px;
+}
+
+p{
+    font-family: 'Asap', sans-serif;
+    color: #04146c;
+    font-size: 33.3px;
+    line-height: 1.45;
+    margin-bottom: 20px;
+}
+
+p strong{
+    font-family: 'Asap', bold;
+    font-weight: 700;
+}
+
+h3{
+    font-family:'MuseoModerno', sans-serif;
+    color: #0a2ff1;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 58px;
+    margin-bottom: 12px;
+}
+
+ul{
+    font-family: 'Asap', bold;
+    color: #04146c;
+    padding-left: 18px;
+    font-size: 33.3px;
+    font-weight: 700;
+    line-height: 1.9;
+}
+
+footer {
+    margin-top: 95px;
+    margin-left: -100px;
+}
+
+
+h4{
+    font-family: 'MuseoModerno', bold;
+    color: #8a9af1;
+    font-size: 198.6px;
+    font-weight: 800;
+    line-height: 1;
+}
