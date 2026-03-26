@@ -1,0 +1,272 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+hr{
+    border: 1px solid black;
+    margin-left: 7%;
+    margin-right: 7%;
+    width: auto;
+}
+
+/* ----  HEADER  ---- */ 
+
+header{
+    margin-bottom: 10%;      /*Agrego al header un margin bottom de 10% para separar un poco el main*/ 
+}
+
+header section, header nav{   /*Coloco tanto al nav como al section del header con un contenido en linea*/ 
+    display: inline-block;
+}
+
+header section{               /*Hago que el section ocupe el 50% del ancho del contenedor header*/ 
+    width: 50%;
+    padding-left: 2.5%;
+}
+
+header section img{           /*Hago que la imagen siempre ocupe 250px, y su margin se adapte segun la pantalla se vaya achicando, manteniendo el margin top siempre igual*/ 
+    width: 250px;
+    margin: 5px 0 0 10%;
+}
+
+header nav{                   /*Hago que el nav ocupe el 29% del contenedor, asi este siempre estara del lado derecho y alineo el texto del mismo lado*/ 
+    width: 49%;
+    text-align: right;
+}
+
+header nav ul {               /*Le quito el formato a la lista (para que no aparezca numeracion o puntos)*/ 
+    list-style: none;
+}
+
+header nav ul li{             /*Hago que el contenido de la lista se muestre uno al lado del otro, seteandole un margin para separar y un tamaño de las letras*/   
+    display: inline-block;
+    margin: 5px 100px 5px 30px;
+    font-size: 30px;
+}
+
+
+header nav ul li a{           /*Le quito el subrayado al link, y le seteo un color de texto*/ 
+    text-decoration: none;
+    color:rgb(50, 54, 58);
+}
+
+header nav ul li a:visited{   /*Le seteo un color de texto al link para que no cambie cuando se visite el mismo*/ 
+    color:rgb(50, 54, 58);
+}
+
+
+
+/* ----  MAIN  ---- */ 
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+main section{
+    display: inline-block;
+    width: 50%;
+    font-size: 24px;
+    vertical-align: top;
+    align-items: center;
+}
+
+main .section1, main .section3{
+    padding: 0 2.5% 0 30px;
+}
+
+main .section1{
+    width: 42%;
+}
+
+main .section1 h1{
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+main .section1 h1 strong{
+    display: block;
+    font-family: 'Coiny', sans-serif;
+    font-size: 95px;
+    line-height: 1;
+}
+
+main .section1 h2,
+main .section3 h3,
+main .section4 h3{
+    display: inline-block;
+    background-color: yellow;
+
+}
+
+main .section1 h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px 0 70px 0;
+    padding: 0 30px 0 15px;
+}
+
+main .section1 p, 
+main .section3 p,
+main .section4 p{
+    width: 79%;
+    line-height: 1.5;
+}
+
+main .section2{
+    width: 58%;
+    text-align: right;
+}
+
+main .section2 img{
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    margin-right: 7%;
+}
+
+main .section3,
+main .section4{
+    padding: 30px 70px 70px 40px;
+}
+
+main .section3 h3,
+main .section4 h3{
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+
+
+/* ----  SECTION SERVICIOS  ---- */ 
+
+.section5{
+    width: 90%;
+    margin: 80px auto;
+    font-size: 0;
+}
+
+.section5 .div1,
+.section5 .div2{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-bottom: 70px;
+}
+
+.section5 .div1{
+    width: 42%;
+    text-align: center;
+}
+
+.section5 .div1 img{
+    width: 88%;
+    max-width: 520px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.section5 .div2{
+    width: 58%;
+    padding-left: 200px;
+}
+
+.section5 .div2 h3{
+    font-size: 56px;
+    margin-bottom: 38px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.section5 .div2 ol{
+    margin-left: 40px;
+}
+
+.section5 .div2 ol li{
+    font-size: 24px;
+    line-height: 1.55;
+    margin-bottom: 24px;
+    color: black;
+}
+
+.section5 .div2 ol strong{
+    display: inline-block;
+    background-color: yellow;
+    font-weight: 700;
+}
+
+
+/* ---- ASIDE CONTACTO ---- */
+
+aside{
+    width: 90%;
+    margin: 80px auto;
+    padding-left: 30px;
+}
+
+aside h2{
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black
+}
+
+aside h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: black;
+    background-color: yellow;
+}
+
+aside h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(92, 92, 92);
+}
+
+aside img{
+    width: 40px;
+    margin-right: 15px;
+}
+
+/* ---- FOOTER ---- */
+
+footer{
+    width: 90%;
+    margin: 40px auto;
+    padding-left: 30px;
+    display: inline-block;
+}
+
+footer h3{
+    display: inline-block;
+    font-family: 'Coiny', sans-serif;
+    margin-left: 90px;
+    margin-right: 100px;
+    font-size: 40px;
+    color: black;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(50, 54, 58);
+    font-size: 20px;
+}
+
+footer a:visited{
+    color: rgb(50, 54, 58);
+}
