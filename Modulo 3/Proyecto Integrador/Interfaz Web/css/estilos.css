@@ -1,0 +1,415 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:wght@400;700&display=swap');
+
+/* Selector universal: quita márgenes y rellenos por defecto, y hace que el box model incluya border y padding dentro del ancho/alto */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define estilos generales para todo el cuerpo de la página */
+body{
+    width: 100%;                          /* Hace que el body ocupe todo el ancho disponible */
+    font-family: 'Roboto', sans-serif;    /* Establece Roboto como fuente principal del sitio */
+    font-weight: 400;                     /* Usa el peso normal de la fuente */
+}
+
+/* Personaliza la línea horizontal */
+hr{
+    border: 1px solid black;              /* Dibuja una línea negra de 1 píxel */
+    margin-left: 7%;                      /* Deja espacio a la izquierda */
+    margin-right: 7%;                     /* Deja espacio a la derecha */
+    width: auto;                          /* Permite que el ancho se adapte automáticamente */
+}
+
+/* ----  HEADER  ---- */ 
+
+header{
+    margin-bottom: 10%;                   /* Separa el encabezado del contenido siguiente */
+}
+
+/* Hace que la sección del logo y la navegación se acomoden en la misma línea */
+header section, header nav{    
+    display: inline-block;
+}
+
+/* Configura el bloque donde está el logo o contenido izquierdo del header */
+header section{                
+    width: 50%;                           /* Ocupa la mitad del ancho del encabezado */
+    padding-left: 2.5%;                   /* Agrega espacio interno a la izquierda */
+}
+
+/* Ajusta la posición de la imagen dentro de la sección del header */
+header section img{           
+    margin: 5px 0 0 10%;                  /* Da margen superior y mueve la imagen hacia la derecha */
+}
+
+/* Configura el bloque de navegación */
+header nav{                   
+    text-align: right;                    /* Alinea el menú hacia la derecha */
+}
+
+/* Quita los estilos de lista por defecto del menú */
+header nav ul {               
+    list-style: none;
+}
+
+/* Hace que los ítems del menú se muestren en línea y con separación */
+header nav ul li{               
+    display: inline-block;
+    margin: 5px 100px 5px 30px;           /* Espacia mucho cada opción del menú */
+    font-size: 30px;                      /* Define un tamaño grande para las opciones */
+}
+
+/* Estilo base de los enlaces del menú */
+header nav ul li a{            
+    text-decoration: none;                /* Quita el subrayado */
+    color:rgb(50, 54, 58);                /* Aplica un gris oscuro */
+}
+
+/* Mantiene el mismo color cuando el enlace ya fue visitado */
+header nav ul li a:visited{   
+    color:rgb(50, 54, 58);
+}
+
+/* ----  MAIN  ---- */ 
+
+main{                        
+    width: 90%;                           /* Hace que el main ocupe el 90% del ancho de la página */
+    margin: 0 auto;                       /* Lo centra horizontalmente */
+    font-size: 0;                         /* Elimina espacios entre elementos inline-block */
+}
+
+/* Configura las secciones internas del main */
+main section{                
+    display: inline-block;                /* Permite ubicarlas una al lado de la otra */
+    width: 50%;                           /* Cada sección ocupa la mitad del ancho base */
+    font-size: 24px;                      /* Restaura un tamaño visible para el texto interno */
+    vertical-align: top;                  /* Alinea las secciones desde arriba */
+    align-items: center;                  /* Intenta alinear contenido al centro, aunque solo funciona en contenedores flex */
+}
+
+/* Aplica padding específico a las secciones 1 y 3 */
+main .section1, main .section3{   
+    padding: 0 2.5% 0 30px;               /* Agrega espacio interno lateral */
+}
+
+/* Ajusta el ancho particular de la primera sección */
+main .section1{              
+    width: 42%;                           /* Hace esta sección un poco más angosta */
+}
+
+/* Estilo principal del h1 de la sección 1 */
+main .section1 h1{           
+    font-size: 48px;                      /* Define un tamaño grande para el título */
+    font-weight: 400;                     /* Usa un peso normal */
+    margin-bottom: 15px;                  /* Separa el título del contenido siguiente */
+}
+
+/* Destaca la parte fuerte del h1 */
+main .section1 h1 strong{    
+    display: block;                       /* Hace que el strong ocupe una línea entera */
+    font-family: 'Coiny', sans-serif;     /* Usa la fuente decorativa Coiny */
+    font-size: 95px;                      /* Agranda mucho el texto */
+    line-height: 1;                       /* Reduce el espacio vertical entre líneas */
+}
+
+/* Comparte estilos de fondo para títulos destacados */
+main .section1 h2,
+main .section3 h3,
+main .section4 h3{          
+    display: inline-block;                /* Permite que el fondo se ajuste al contenido */
+    background-color: yellow;             /* Resalta con fondo amarillo */
+
+}
+
+/* Estilo específico del h2 de la sección 1 */
+main .section1 h2{         
+    font-size: 20px;                      /* Tamaño más pequeño que el h1 */
+    font-weight: 400;                     /* Peso normal */
+    margin: 20px 0 70px 0;                /* Separa arriba y mucho abajo */
+    padding: 0 30px 0 15px;               /* Agrega aire interno dentro del fondo amarillo */
+}
+
+/* Estilos compartidos para párrafos de varias secciones */
+main .section1 p, 
+main .section3 p,
+main .section4 p{          
+    width: 79%;                           /* Limita el ancho del texto para mejor lectura */
+    line-height: 1.5;                     /* Mejora la legibilidad aumentando la altura de línea */
+}
+
+/* Ajusta la segunda sección del main, probablemente donde va una imagen */
+main .section2{            
+    width: 58%;                           /* Ocupa más espacio que la sección 1 */
+    text-align: right;                    /* Alinea el contenido a la derecha */
+}
+
+/* Estilo de la imagen de la sección 2 */
+main .section2 img{
+    width: 70%;                           /* Hace la imagen proporcional al contenedor */
+    height: auto;                         /* Mantiene su proporción original */
+    display: inline-block;                /* Permite control de alineación y tamaño */
+    margin-right: 7%;                     /* La separa del borde derecho */
+}
+
+/* Configuración compartida para las secciones 3 y 4 */
+main .section3,
+main .section4{
+    padding: 30px 70px 70px 40px;         /* Agrega bastante espacio interior */
+}
+
+/* Estilo compartido para los títulos h3 de secciones 3 y 4 */
+main .section3 h3,
+main .section4 h3{
+    padding: 5px 10px;                    /* Agrega relleno al bloque amarillo */
+    margin-bottom: 20px;                  /* Separa el título del párrafo */
+}
+
+/* ----  SECTION SERVICIOS  ---- */ 
+
+.section5{
+    width: 90%;                           /* Mantiene el ancho general del sitio */
+    margin: 80px auto;                    /* Agrega espacio vertical y centra la sección */
+    font-size: 0;                         /* Elimina espacios entre inline-block */
+}
+
+/* Los dos divs principales van en línea y alineados al centro vertical */
+.section5 .div1,
+.section5 .div2{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;                      /* Restaura tamaño visible para el contenido */
+    margin-bottom: 70px;                  /* Separa del siguiente bloque */
+}
+
+/* Contenedor izquierdo de la sección servicios */
+.section5 .div1{
+    width: 42%;                           /* Ocupa menos ancho que el bloque derecho */
+    text-align: center;                   /* Centra su contenido */
+}
+
+/* Imagen del bloque izquierdo */
+.section5 .div1 img{
+    width: 88%;                           /* Hace la imagen grande pero sin ocupar todo el contenedor */
+    max-width: 520px;                     /* Limita el tamaño máximo en pantallas grandes */
+    height: auto;                         /* Mantiene la proporción */
+    display: block;                       /* Permite centrarla correctamente */
+    margin: 0 auto;                       /* Centra la imagen horizontalmente */
+}
+
+/* Contenedor derecho con el texto y la lista */
+.section5 .div2{
+    width: 58%;                           /* Ocupa más espacio para el contenido textual */
+    padding-left: 200px;                  /* Separa el contenido del bloque izquierdo */
+}
+
+/* Título de la sección servicios */
+.section5 .div2 h3{
+    font-size: 56px;                      /* Tamaño muy destacado */
+    margin-bottom: 38px;                  /* Lo separa de la lista */
+    text-transform: uppercase;            /* Convierte el texto a mayúsculas */
+    color: black;                         /* Color negro */
+}
+
+/* Sangría de la lista ordenada */
+.section5 .div2 ol{
+    margin-left: 40px;
+}
+
+/* Estilo de los ítems de la lista */
+.section5 .div2 ol li{
+    font-size: 24px;                      /* Hace el texto grande y legible */
+    line-height: 1.55;                    /* Mejora la lectura */
+    margin-bottom: 24px;                  /* Separa cada punto */
+    color: black;                         /* Color negro */
+}
+
+/* Resalta texto importante dentro de la lista */
+.section5 .div2 ol strong{
+    display: inline-block;                /* Permite aplicar fondo ajustado al texto */
+    background-color: yellow;             /* Marca el texto con amarillo */
+    font-weight: 700;                     /* Lo pone en negrita */
+}
+
+/* ---- SECTION FORMULARIO DE CONTACTO ---- */
+.section6{
+    width: 90%;                    /*Hace que la sección ocupe el 90% del ancho total, manteniendo la misma lógica que el resto del sitio*/
+    margin: 80px auto 110px auto;  /*Le da separación superior e inferior, y con auto la centra horizontalmente*/
+    padding: 0 30px;               /*Agrega espacio interno a izquierda y derecha para que el contenido no quede pegado*/
+    font-size: 0;                  /*Elimina los espacios visuales que aparecen entre elementos inline-block*/
+}
+
+.section6 div,
+.section6 form{
+    display: inline-block;         /*Permite que el bloque de texto y el formulario queden uno al lado del otro*/
+    width: 50%;                    /*Hace que cada bloque ocupe la mitad del ancho disponible*/
+    vertical-align: top;           /*Alinea ambos bloques desde la parte superior*/
+    font-size: 16px;               /*Vuelve a darle tamaño de letra normal al contenido interno*/
+}
+
+.section6 div{
+    padding-right: 110px;           /*Separa el bloque de títulos del formulario para que respiren visualmente*/
+    margin-left: 10px;
+}
+
+.section6 h2{
+    font-size: 0;                  /*Evita espacios raros dentro del título al trabajar con el strong como bloque visual*/
+    font-weight: 400;              /*Mantiene un peso base normal, ya que el destaque principal lo hará el strong*/
+    margin-bottom: 25px;           /*Separa el título principal del subtítulo amarillo*/
+    line-height: 1.2;              /*Controla la altura de línea para que el título quede compacto*/
+}
+
+.section6 h2 strong{
+    display: inline;               /*Mantiene el texto en línea permitiendo que haga salto de renglón naturalmente*/
+    font-size: 58px;               /*Le da el tamaño grande del título principal*/
+    font-weight: 700;              /*Hace que el texto destaque con más fuerza*/
+    color: white;                  /*Pone el texto en blanco para contrastar con el fondo negro*/
+    background-color: black;       /*Agrega el fondo negro detrás del texto, como en la maqueta*/
+    padding: 0 12px 4px 12px;      /*Da aire interno alrededor del texto y deja un pequeño margen inferior visual*/
+    line-height: 1.7;              /*Define una altura de línea cómoda para los renglones del título*/
+    -webkit-box-decoration-break: clone; /*Hace que el fondo y padding se repitan en cada línea cuando el texto corta*/
+    box-decoration-break: clone;   /*Versión estándar de la propiedad para mantener el mismo efecto*/
+}
+
+.section6 h3{
+    font-size: 0;                  /*Quita espacios sobrantes para que el bloque amarillo quede más limpio*/
+    font-weight: 400;              /*El peso real del subtítulo lo manejará el strong*/
+}
+
+.section6 h3 strong{
+    display: inline-block;         /*Permite que el subtítulo se comporte como una cajita con fondo*/
+    font-size: 32px;               /*Le da un tamaño importante, pero menor que el título principal*/
+    font-weight: 700;              /*Hace que el texto resalte*/
+    color: black;                  /*Mantiene el texto oscuro sobre el fondo amarillo*/
+    background-color: yellow;      /*Crea la franja amarilla del subtítulo*/
+    padding: 4px 14px;             /*Agrega espacio interno para que no quede apretado*/
+}
+
+.section6 form{
+    padding-left: 200px;            /*Empuja el formulario hacia la derecha para separarlo del texto*/
+    max-width: 650px;
+}
+
+.section6 form label{
+    display: block;                /*Hace que cada label ocupe una línea completa*/
+    font-size: 18px;               /*Define un tamaño de letra legible para los textos del formulario*/
+    font-weight: 700;              /*Hace que los labels se vean más marcados*/
+    color: black;                  /*Mantiene el texto en negro*/
+    margin-bottom: 10px;           /*Separa cada label de su campo*/
+}
+
+.section6 form input,
+.section6 form textarea{
+    display: block;                /*Hace que cada campo quede debajo de su label*/
+    width: 100%;                   /*Hace que los campos ocupen todo el ancho del formulario*/
+    border: 1px solid rgb(120, 120, 120); /*Agrega un borde gris suave como en la referencia*/
+    font-family: 'Roboto', sans-serif;    /*Mantiene la tipografía general del sitio*/
+    font-size: 18px;               /*Da un tamaño cómodo al texto que se escribe*/
+    padding: 10px 12px;            /*Agrega aire interno para que el texto no toque los bordes*/
+    margin-bottom: 28px;           /*Separa cada campo del siguiente bloque*/
+    background-color: transparent; /*Deja el fondo limpio, integrándose al color del body*/
+}
+
+.section6 form input{
+    height: 44px;                  /*Define una altura uniforme para nombre y email*/
+}
+
+.section6 form textarea{
+    height: 120px;                 /*Le da más alto al campo mensaje para permitir varias líneas*/
+    resize: none;                  /*Evita que el usuario cambie manualmente el tamaño del textarea*/
+}
+
+.section6 form button,
+.section6 form input[type="reset"]{
+    display: inline-block;         /*Hace que ambos botones queden uno al lado del otro*/
+    width: 145px;                  /*Les da un ancho parejo, similar al de la maqueta*/
+    height: 42px;                  /*Les da una altura uniforme*/
+    border: none;                  /*Quita el borde por defecto del navegador*/
+    background-color: black;       /*Coloca el fondo negro como en la referencia*/
+    color: white;                  /*Pone el texto en blanco para generar contraste*/
+    font-family: 'Roboto', sans-serif;    /*Mantiene la misma fuente del sitio*/
+    font-size: 16px;               /*Ajusta el tamaño del texto del botón*/
+    font-weight: 700;              /*Hace que el texto del botón se vea más fuerte*/
+    cursor: pointer;               /*Muestra la mano al pasar encima, indicando que es clickeable*/
+}
+
+.section6 form button{
+    margin-right: 90px;            /*Separa el botón Enviar del botón Borrar*/
+}
+
+.section6 form input[type="reset"]{
+    padding: 0;                    /*Quita relleno interno extra para que respete mejor el alto definido*/
+}
+
+.section6 form input:focus,
+.section6 form textarea:focus{
+    outline: none;                 /*Quita el contorno azul por defecto del navegador*/
+    border: 1px solid black;       /*Resalta el campo activo con un borde negro*/
+}
+
+/* ---- ASIDE REDES---- */
+
+aside{
+    width: 90%;                    /*Hace que el aside conserve el mismo ancho general que las demás secciones*/
+    margin: 10px auto 60px auto;      /*Lo centra horizontalmente y le da separación inferior*/
+    padding: 0 30px;               /*Agrega aire interno lateral para alinearlo con section6*/
+    font-size: 0;                  /*Elimina espacios visuales entre elementos inline-block*/
+}
+
+aside h4,
+aside a,
+aside img{
+    display: inline-block;         /*Permite alinear el texto y los íconos sobre una misma línea*/
+    vertical-align: middle;        /*Centra verticalmente los elementos entre sí*/
+}
+
+aside h4{
+    width: 120px;                  /*Le da un ancho fijo para que "redes wwwapas" quiebre en dos líneas*/
+    font-size: 36px;               /*Ajusta el tamaño del texto del bloque lateral*/
+    font-weight: 700;              /*Hace que el texto se vea más firme*/
+    line-height: 1.35;             /*Separa un poco las dos líneas del texto*/
+    color: rgb(120, 120, 120);     /*Usa un gris suave, como en la referencia*/
+    margin-right: 90px;            /*Separa el texto de los íconos*/
+    margin-left: 10px;
+    text-transform: lowercase;     /*Asegura que el texto quede en minúscula*/
+}
+
+aside a{
+    text-decoration: none;         /*Quita el subrayado por defecto de los enlaces*/
+}
+
+aside img{
+    width: 160px;                   /*Aumenta el tamaño de los íconos para que tengan más presencia*/
+    height: auto;                  /*Mantiene la proporción original de cada imagen*/
+    margin-left: 150px;           /*Genera separación amplia entre íconos, similar a la maqueta*/
+}
+
+/* ---- FOOTER ---- */
+
+footer{
+    width: 90%;                    /* Hace que el footer tenga el mismo ancho general que otras secciones */
+    margin: 40px auto;             /* Lo centra y le da espacio vertical */
+    padding-left: 30px;            /* Lo desplaza un poco hacia la derecha internamente */
+    display: inline-block;         /* Permite que el footer se comporte como bloque en línea */
+}
+
+footer h3{
+    display: inline-block;         /* Hace que el título y los enlaces puedan convivir en la misma línea */
+    font-family: 'Coiny', sans-serif; /* Usa la tipografía decorativa del sitio */
+    margin-left: 90px;             /* Lo separa del borde izquierdo */
+    margin-right: 100px;           /* Lo separa del enlace siguiente */
+    font-size: 40px;               /* Define un tamaño grande para el título */
+    color: black;                  /* Mantiene el texto en negro */
+}
+
+footer a{
+    text-decoration: none;         /* Quita el subrayado por defecto del enlace */
+    color: rgb(50, 54, 58);        /* Aplica un gris oscuro */
+    font-size: 20px;               /* Define un tamaño legible para el enlace */
+}
+
+footer a:visited{
+    color: rgb(50, 54, 58);        /* Mantiene el mismo color aun cuando el enlace ya fue visitado */
+}
